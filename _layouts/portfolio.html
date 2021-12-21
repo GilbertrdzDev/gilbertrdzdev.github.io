@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+</head>
+<body>
+<h2>{{ site.data.portfolio[1] }}</h2>
+<ul>
+{% for product in site.data.portfolio %}
+    <li>
+        ID: {{ product[1].id }} | Título: {{ product[1].title }} | Contenido: {{ product[1].content }}
+    </li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
